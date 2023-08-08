@@ -1,0 +1,22 @@
+app:
+  port: 3111
+  cors_hosts: 
+
+db:
+  mysql:
+    host: 'rh-mysql'
+    port: 3306
+    database: 'NEST'
+    username: 'rhadmin'
+    password: 'Password01'
+    sync: true
+
+cors:
+  origin:
+    - /\.rhapp\.in$/, /\.intelmach\.com$/, localhost 
+  methods: 
+    - GET
+    - POST
+    - PUT
+    - DELETE
+  credentials: true
